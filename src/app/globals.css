@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --main-color: #f1b4bb;
+  --secondary-color: #132043;
+  --bg-primary: #1f4172;
+}
+
+.primary-btn{
+  @apply px-4 py-2 rounded-2xl text-[var(--secondary-color)] bg-[var(--main-color)] border-2 border-transparent transition-all duration-300 hover:bg-transparent hover:text-[var(--main-color)] hover:border-[var(--main-color)] hover:shadow-[0_0_12px_-3px_var(--main-color)]
+}

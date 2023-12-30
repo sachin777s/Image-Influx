@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Navbar from './Navbar'
 
 export const metadata: Metadata = {
   title: 'Image Influx',
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='bg-[var(--bg-primary)]'>
+        <Navbar/>
         {children}
       </body>
     </html>

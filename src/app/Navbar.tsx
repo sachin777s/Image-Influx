@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { BsPersonCircle, BsWindowDesktop } from "react-icons/bs";
 
 export default function Navbar() {
-    const [isLogin, setIsLogin] = useState<boolean>(true);
+    const [isLogin, setIsLogin] = useState<boolean>(false);
 
     interface Route {
         name: string;
@@ -92,7 +92,7 @@ export default function Navbar() {
                         </ul>
                     </div>
                 }
-                <button className='primary-btn'>{isLogin ? "Upload" : "Login"}</button>
+                <Link href={isLogin ? "" : "/login"} className='primary-btn'>{isLogin ? "Upload" : "Login"}</Link>
             </div>
         </nav>
     )

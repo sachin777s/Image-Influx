@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function Home() {
 
-  const [isVideo, setIsVideo] = useState<boolean>(false)
+  let [isVideo, setIsVideo] = useState<boolean>(false)
   const [query, setQuery] = useState<string>("");
 
   return (
